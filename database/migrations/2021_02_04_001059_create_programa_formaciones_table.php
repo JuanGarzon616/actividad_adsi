@@ -15,10 +15,10 @@ class CreateProgramaFormacionesTable extends Migration
     {
         Schema::create('programa_formaciones', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
             $table->string('nombre');
             $table->string('sigla',10);
             $table->string('codigo');
+            $table->timestamps();
         });
     }
 
