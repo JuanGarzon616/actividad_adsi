@@ -16,7 +16,7 @@ class CreateFichasTable extends Migration
         Schema::create('fichas', function (Blueprint $table) {
             $table->id();
             $table->string('num_caracterizacion');
-            $table->string('estado',1);
+            $table->unsignedTinyInteger('estado');
             $table->bigInteger('jornada_id')->unsigned();
             $table->bigInteger('programa_formacion_id')->unsigned();
             $table->foreign('jornada_id')->references('id')->on('jornadas');
