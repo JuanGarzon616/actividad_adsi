@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b072187-3c90-48f1-afc5-94f706a9a3d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/Jornadas/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Jornada.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Jornada.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_04_180211_create_fichas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_180211_create_fichas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_04_193442_create_aprendices_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_193442_create_aprendices_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +173,7 @@
       <workItem from="1612385788264" duration="717000" />
       <workItem from="1612452923853" duration="1183000" />
       <workItem from="1612458101882" duration="5873000" />
-      <workItem from="1612467386270" duration="6591000" />
+      <workItem from="1612467386270" duration="7086000" />
     </task>
     <servers />
   </component>
@@ -183,6 +181,15 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
