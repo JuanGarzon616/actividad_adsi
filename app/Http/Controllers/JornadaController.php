@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Jornada;
 use Illuminate\Http\Request;
 
 class JornadaController extends Controller
@@ -13,7 +14,8 @@ class JornadaController extends Controller
      */
     public function index()
     {
-        //
+        $jornadas=Jornada::paginate('2');
+        return view('Jornadas.index',compact('jornadas'));
     }
 
     /**
