@@ -25,7 +25,7 @@ class JornadaController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -36,7 +36,8 @@ class JornadaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $jornada=Jornada::create($request->all());
+        return redirect()->route()->with();
     }
 
     /**
