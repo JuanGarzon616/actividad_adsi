@@ -14,7 +14,7 @@ class JornadaController extends Controller
      */
     public function index()
     {
-        $jornadas=Jornada::paginate('2');
+        $jornadas=Jornada::paginate();
         return view('Jornadas.index',compact('jornadas'));
     }
 
@@ -25,7 +25,7 @@ class JornadaController extends Controller
      */
     public function create()
     {
-
+        return view('jornadas.create');
     }
 
     /**
@@ -37,7 +37,7 @@ class JornadaController extends Controller
     public function store(Request $request)
     {
         $jornada=Jornada::create($request->all());
-        return redirect()->route()->with();
+        return redirect()->route('jornadas.index')->with('status','Se ha creado la nueva jornada.');
     }
 
     /**

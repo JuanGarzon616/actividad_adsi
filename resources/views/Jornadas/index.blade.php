@@ -11,6 +11,7 @@
 <body>
 <div class="container">
     <div class="table-responsive">
+        <button class="btn btn-primary">Nueva Jornada</button>
         <table class="table table-striped">
             <thead>
                 <tr>
