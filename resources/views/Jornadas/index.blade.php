@@ -11,7 +11,10 @@
 <body>
 <div class="container">
     <div class="table-responsive">
-        <button class="btn btn-primary">Nueva Jornada</button>
+        <a class="btn btn-primary" href="{{ route('jornadas.create') }}">Nueva Jornada</a>
+        @if(session('status'))
+            <div class="alert alert-success">{{ session('status') }}</div>
+        @endif
         <table class="table table-striped">
             <thead>
                 <tr>
