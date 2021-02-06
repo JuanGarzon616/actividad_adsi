@@ -59,7 +59,8 @@ class JornadaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $jornada=Jornada::find($id);
+        return view('jornadas.edit',compact('jornada'));
     }
 
     /**
@@ -71,7 +72,8 @@ class JornadaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $jornada=Jornada::find($id)->update($request->all());
+        return redirect()->route('jornadas.index')->with('status1','Se han guardado los cambios.');
     }
 
     /**
