@@ -9,7 +9,7 @@ class JornadaController extends Controller
 {
     public function index()
     {
-        $jornadas=Jornada::paginate();
+        $jornadas=Jornada::get();
         return view('Jornadas.index',compact('jornadas'));
     }
 

@@ -2,20 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JornadaController;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-/*
-Route::get('/Jornadas', function () {
-    return view('Jornadas.delete');
-});*/
+use App\Http\Controllers\ProgramaFormacionController;
+
 Route::get('jornadas/{jornada}/delete',JornadaController::class)->name('jornadas.delete');
 
 Route::resource('jornadas',JornadaController::class);
+
+Route::resource('programas',ProgramaFormacionController::class);
