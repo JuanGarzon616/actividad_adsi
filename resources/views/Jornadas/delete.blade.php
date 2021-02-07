@@ -14,15 +14,24 @@
         <div class="col-md-4 offset-md-4">
             <div class="card">
                 <div class="card-body">
-                    <h3 class="alert alert-success" >Desea eliminar real mente?</h3>
+
                     <form action="{{ route('jornadas.destroy',$jornada->id) }}" method="post">
                         @csrf
                         @method('DELETE')
+                        <h3 class="alert alert-success" >Desea eliminar<br>
+                            "{{ $jornada->nombre }}"
+                            <br> realmente?
+                            <div>
+                                <button type="submit" class="btn btn-danger col-md-5" >Si</button>
+                                <a href="{{ route('jornadas.index') }}" class="btn btn-primary col-md-5" >No</a>
+                            </div>
+                        </h3>
+                        <!--
                         <div class="form-group">
                             <label for="">Nombre Jornada</label>
-                            <p>{{ $jornada->nombre }}</p>
-                        </div>
-                        <button type="submit" class="btn btn-danger" >Si</button>
+                            <p></p>
+                        </div>-->
+
                     </form>
                 </div>
             </div>
