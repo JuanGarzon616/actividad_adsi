@@ -11,7 +11,7 @@
 <body>
 <div class="container">
     <div class="table-responsive">
-        <a class="btn btn-primary" href="{{ route('jornadas.create') }}">Nueva Jornada</a>
+        <a class="btn btn-primary" href="{{ route('programaformaciones.create') }}">Nuevo Programa</a>
         @if(session('status'))
             <div class="alert alert-success">{{ session('status') }}</div>
         @endif
@@ -27,20 +27,24 @@
                 <th>N°</th>
                 <th>Jornada</th>
                 <th>Creacion</th>
+                <th>Siglas</th>
+                <th>Codigo</th>
                 <th>Modificacion</th>
                 <th>Opciones</th>
             </tr>
             </thead>
             <tbody>
-            @foreach($jornadas as $jornada)
+            @foreach($programas as $programa)
                 <tr>
                     <td>{{ $loop->iteration }}</td>
-                    <td>{{ $jornada->nombre }}</td>
-                    <td>{{ $jornada->created_at }}</td>
-                    <td>{{ $jornada->updated_at }}</td>
+                    <td>{{ $programa->nombre }}</td>
+                    <td>{{ $programa->sigla }}</td>
+                    <td>{{ $programa->codigo }}</td>
+                    <td>{{ $programa->created_at }}</td>
+                    <td>{{ $programa->updated_at }}</td>
                     <td>
-                        <a href="{{ route('jornadas.edit',$jornada->id) }}" class="btn btn-sm btn-warning">Editar</a>|
-                        <a href="{{ route('jornadas.delete',$jornada->id) }}" class="btn btn-sm btn-danger">Eliminar</a>
+                        <a href="{{ route('jornadas.edit',$programa->id) }}" class="btn btn-sm btn-warning">Editar</a>|
+                        <a href="{{ route('jornadas.delete',$programa->id) }}" class="btn btn-sm btn-danger">Eliminar</a>
                     </td>
                 </tr>
             @endforeach

@@ -8,4 +8,4 @@ Route::get('jornadas/{jornada}/delete',JornadaController::class)->name('jornadas
 
 Route::resource('jornadas',JornadaController::class);
 
-Route::resource('programas',ProgramaFormacionController::class);
+Route::resource('programaformaciones',ProgramaFormacionController::class);

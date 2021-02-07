@@ -10,7 +10,7 @@ class ProgramaFormacionController extends Controller
     public function index()
     {
         $programas=ProgramaFormacione::get();
-        return view('programas.index',compact('programas'));
+        return view('programaformaciones.index',compact('programas'));
     }
 
     public function create()
