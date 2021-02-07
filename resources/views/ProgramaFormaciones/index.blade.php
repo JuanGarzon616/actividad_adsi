@@ -25,10 +25,10 @@
             <thead>
             <tr>
                 <th>N°</th>
-                <th>Jornada</th>
-                <th>Creacion</th>
+                <th>Programa de Formacion</th>
                 <th>Siglas</th>
                 <th>Codigo</th>
+                <th>Creacion</th>
                 <th>Modificacion</th>
                 <th>Opciones</th>
             </tr>
@@ -43,8 +43,7 @@
                     <td>{{ $programa->created_at }}</td>
                     <td>{{ $programa->updated_at }}</td>
                     <td>
-                        <a href="{{ route('jornadas.edit',$programa->id) }}" class="btn btn-sm btn-warning">Editar</a>|
-                        <a href="{{ route('jornadas.delete',$programa->id) }}" class="btn btn-sm btn-danger">Eliminar</a>
+                        <a href="{{ route('programaformaciones.edit',$programa->id) }}" class="btn btn-sm btn-warning">Editar</a>
                     </td>
                 </tr>
             @endforeach

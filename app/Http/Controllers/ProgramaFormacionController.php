@@ -9,18 +9,19 @@ class ProgramaFormacionController extends Controller
 {
     public function index()
     {
-        $programas=ProgramaFormacione::get();
+        $programas=ProgramaFormacione::paginate('5');
         return view('programaformaciones.index',compact('programas'));
     }
 
     public function create()
     {
-        //
+        return view('programaformaciones.create');
     }
 
     public function store(Request $request)
     {
-        //
+        $programa=ProgramaFormacione::create($request->all());
+        return redirect()->route('programaformaciones.index')->with('status','Se ha creado el nuevo programacion de formacion.');
     }
 
     public function show($id)
@@ -30,16 +31,13 @@ class ProgramaFormacionController extends Controller
 
     public function edit($id)
     {
-        //
+        $programa=ProgramaFormacione::find($id);
+        return view('programaformaciones.edit',compact('programa'));
     }
 
     public function update(Request $request, $id)
     {
-        //
-    }
-
-    public function destroy($id)
-    {
-        //
+        $programa=ProgramaFormacione::find($id)->update($request->all());
+        return redirect()->route('programaformaciones.index')->with('status1','Se han guardado los cambios.');
     }
 }

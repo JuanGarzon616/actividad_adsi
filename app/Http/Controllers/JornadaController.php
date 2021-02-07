@@ -6,7 +6,7 @@ use App\Models\Jornada;
 use Illuminate\Http\Request;
 
 class JornadaController extends Controller
-{
+{/*
     public function index()
     {
         $jornadas=Jornada::get();
@@ -50,7 +50,7 @@ class JornadaController extends Controller
     public function __invoke($id){
         $jornada=Jornada::find($id);
         return view('jornadas.delete',compact('jornada'));
-    }
+    }*/
     /*
     public function borrar($id){
         //return view('Jornadas.delete');
