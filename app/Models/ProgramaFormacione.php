@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class ProgramaFormacione extends Model
 {
     use HasFactory;
+    protected $table="programa_formaciones";
+    protected $primaryKey="id";
+    protected $fillable=[
+        'nombre','sigla','codigo'
+    ];
 }
