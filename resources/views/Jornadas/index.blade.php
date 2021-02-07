@@ -18,6 +18,9 @@
         @if(session('status1'))
             <div class="alert alert-success">{{ session('status1') }}</div>
         @endif
+        @if(session('status2'))
+            <div class="alert alert-success">{{ session('status2') }}</div>
+        @endif
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -37,7 +40,7 @@
                     <td>{{ $jornada->updated_at }}</td>
                     <td>
                         <a href="{{ route('jornadas.edit',$jornada->id) }}" class="btn btn-sm btn-warning">Editar</a>|
-                        <a href="" class="btn btn-sm btn-danger">Eliminar</a>
+                        <a href="{{ route('jornadas.delete',$jornada->id) }}" class="btn btn-sm btn-danger">Eliminar</a>
                     </td>
                 </tr>
             @endforeach

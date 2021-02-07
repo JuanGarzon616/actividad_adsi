@@ -12,8 +12,10 @@ use App\Http\Controllers\JornadaController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+/*
+Route::get('/Jornadas', function () {
+    return view('Jornadas.delete');
+});*/
+Route::get('jornadas/{jornada}/delete',JornadaController::class)->name('jornadas.delete');
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::resource('jornadas',JornadaController::class);
