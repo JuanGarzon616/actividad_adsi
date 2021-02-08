@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7b072187-3c90-48f1-afc5-94f706a9a3d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JornadaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JornadaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProgramaFormacionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProgramaFormacionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ProgramaFormaciones/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ProgramaFormaciones/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ProgramaFormaciones/delete.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ProgramaFormaciones/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ProgramaFormaciones/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ProgramaFormaciones/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ProgramaFormaciones/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Ficha.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Ficha.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +24,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -180,6 +179,7 @@
       <workItem from="1612639189835" duration="17265000" />
       <workItem from="1612706585005" duration="1776000" />
       <workItem from="1612721969051" duration="8420000" />
+      <workItem from="1612816798963" duration="1504000" />
     </task>
     <servers />
   </component>
