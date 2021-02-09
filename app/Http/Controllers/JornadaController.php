@@ -6,7 +6,7 @@ use App\Models\Jornada;
 use Illuminate\Http\Request;
 
 class JornadaController extends Controller
-{/*
+{
     public function index()
     {
         $jornadas=Jornada::get();
@@ -22,11 +22,6 @@ class JornadaController extends Controller
     {
         $jornada=Jornada::create($request->all());
         return redirect()->route('jornadas.index')->with('status','Se ha creado la nueva jornada.');
-    }
-
-    public function show($id)
-    {
-        //
     }
 
     public function edit($id)
@@ -50,7 +45,7 @@ class JornadaController extends Controller
     public function __invoke($id){
         $jornada=Jornada::find($id);
         return view('jornadas.delete',compact('jornada'));
-    }*/
+    }
     /*
     public function borrar($id){
         //return view('Jornadas.delete');

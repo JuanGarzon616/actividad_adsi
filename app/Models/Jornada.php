@@ -13,4 +13,7 @@ class Jornada extends Model
     protected $fillable=[
         'nombre'
     ];
+    public function ficha(){
+        return $this->hasMany('\App\Models\Ficha');
+    }
 }

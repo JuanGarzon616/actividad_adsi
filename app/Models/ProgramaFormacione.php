@@ -13,4 +13,7 @@ class ProgramaFormacione extends Model
     protected $fillable=[
         'nombre','sigla','codigo'
     ];
+    public function ficha(){
+        return $this->hasMany('\App\Models\Ficha');
+    }
 }
