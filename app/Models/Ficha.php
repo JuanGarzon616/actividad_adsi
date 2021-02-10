@@ -13,7 +13,7 @@ class Ficha extends Model
     protected $fillable=[
         'num_caracterizacion','estado','jornada_id','programa_formacion_id'
     ];
-    public function jornadas(){
+    public function jornada(){
         return $this->belongsTo('\App\Models\Jornada');
     }
     public function programaFormacion(){

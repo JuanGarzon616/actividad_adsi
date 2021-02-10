@@ -40,8 +40,9 @@
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $ficha->num_caracterizacion }}</td>
                     <td></td>
+                    <td></td>
                     <td>{{ $ficha->nombrej }}</td>
-                    <td>{{ $ficha->nombrej }}</td>
+                    <td>{{ $ficha }}</td>
                     <td>{{ $ficha->nombre }}</td>
                     <td>
                         <a href="" class="btn btn-sm btn-warning">Editar</a>|
