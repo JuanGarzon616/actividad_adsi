@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7b072187-3c90-48f1-afc5-94f706a9a3d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FichaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FichaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_04_180211_create_fichas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_180211_create_fichas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/fichas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/fichas/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +189,7 @@
       <workItem from="1614353300284" duration="1443000" />
       <workItem from="1614443180063" duration="592000" />
       <workItem from="1614459793486" duration="380000" />
-      <workItem from="1614523960596" duration="588000" />
+      <workItem from="1614523960596" duration="1708000" />
     </task>
     <servers />
   </component>
