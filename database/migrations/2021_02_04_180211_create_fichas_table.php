@@ -28,6 +28,14 @@ class CreateFichasTable extends Migration
     /**
      * Reverse the migrations.
      *
+    $table->id();
+    $table->string('name');
+    $table->integer('number')->unsigned();
+    $table->string('email')->unique();
+    $table->string('password');
+    $table->rememberToken();
+    $table->timestamps();
+     *
      * @return void
      */
     public function down()

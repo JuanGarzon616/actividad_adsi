@@ -13,6 +13,8 @@ class FichaController extends Controller
         $fichas=Ficha::get();
 
         return view('fichas.index',compact('fichas'));
+
+        //return view('fichas.index',compact('fichas'));
     }
 
     public function create()

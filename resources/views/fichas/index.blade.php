@@ -36,14 +36,19 @@
             </thead>
             <tbody>
             @foreach($fichas as $ficha)
+
                 <tr>
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $ficha->num_caracterizacion }}</td>
-                    <td></td>
-                    <td></td>
-                    <td>{{ $ficha->nombrej }}</td>
-                    <td>{{ $ficha }}</td>
-                    <td>{{ $ficha->nombre }}</td>
+                    @if($ficha->estado==1)
+                        <td>Activo</td>
+                    @else
+                        <td>Desactivado</td>
+                    @endif
+                    <td>{{ $ficha->jornada->nombre }}</td>
+                    <td>{{ $ficha->programaFormacion->nombre }}</td>
+                    <td>{{ $ficha->created_at }}</td>
+                    <td>{{ $ficha->updated_at }}</td>
                     <td>
                         <a href="" class="btn btn-sm btn-warning">Editar</a>|
                         <a href="" class="btn btn-sm btn-danger">Eliminar</a>
